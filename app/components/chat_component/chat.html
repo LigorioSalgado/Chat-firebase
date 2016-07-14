@@ -1,0 +1,25 @@
+<div class="row" style="  padding-top:50px;">
+	<div class="col s6 offset-s3">
+		
+			<input type="text" ng-model="$ctrl.user" placeholder= "user">
+			<input type="text" ng-model="$ctrl.message" placeholder="your mesage">
+			<a ng-click="$ctrl.addMessage()" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+		
+	</div>
+
+</div>
+
+
+<div class="row" style="padding-top=60px;  ">
+	
+	<div class="col s6 offset-s3">
+		<ul class="collection" >
+		    <li class="collection-item avatar" ng-repeat="message in $ctrl.messages">
+		      <i class="material-icons circle green">perm_identity</i>
+		      <span class="title">{{message.user}}:</span>
+		      <p> {{message.message}} </p>
+		    </li>
+    
+  		</ul>
+	</div>
+	</div>

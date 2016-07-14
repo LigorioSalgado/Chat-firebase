@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html ng-app="chatApp">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Chat Angular</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="/css/materialize.min.css">
+	
+
+</head>
+
+<body>
+
+
+	   <chat></chat>      
+</body>
+
+<script src="/js/angular.min.js"></script>
+<script src="/js/angular-route.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/materialize.min.js"></script>
+<script src="/app/app.js"></script>
+
+<script src="/app/factory/factory.js"></script>
+<script src="/app/components/chat_component/chat_component.js"></script>
+
+<script>
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAnibaxLfEWFVJsYHwKtsEQgvDUX7dB97E",
+    authDomain: "chat-ed62a.firebaseapp.com",
+    databaseURL: "https://chat-ed62a.firebaseio.com",
+    storageBucket: "chat-ed62a.appspot.com",
+  };
+  firebase.initializeApp(config);
+</script>
+    
+
+
+
+
+
+
+</html>
